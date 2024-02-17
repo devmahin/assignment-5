@@ -10,7 +10,219 @@
 </head>
 
 <body>
+    <header class="container mx-auto mt-5 ">
+        <nav class="flex justify-between">
+            <h1 class="text-3xl font-bold">P-Ticket</h1>
+            <ul class="flex text-1xl font-semibold items-center gap-x-5 cursor-pointer">
+                <li>Home</li>
+                <li>About</li>
+                <li>Destination</li>
+                <li>Search</li>
+            </ul>
+            <button
+                class="flex text-[#1DD100] rounded-xl border border-[#1DD100] px-5 py-2 bg-gray-100 gap-x-2 text-2xl  items-end">
+                Bus
+                <img class="w-7" src="images/bus-icon.png" alt="">
+            </button>
+        </nav>
 
+        <div class="banner relative my-10 w-full">
+            <img class="w-full " src="images/banner.png" alt="">
+            <div class="absolute left-2/4 top-2/4 text-center -translate-x-2/4 space-y-3 -translate-y-2/4">
+                <h1 class="text-5xl font-semibold text-white">End-to-End Travel with</h1>
+                <h1 class="text-5xl font-semibold text-[#1DD100]"> P Paribahan</h1>
+                <p class="text-white">Yes, you can run unit tests and view the results directly within the app. The
+                    integrated testing features allow for a streamlined .</p>
+                <button class="btn bg-[#1DD100]">
+                    Buy Tickets
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Best offers for you section -->
+        <section class="mx-auto container
+        ">
+            <h1 class="text-center text-5xl font-semibold">Best offers for you</h1>
+            <div class="flex justify-evenly mt-10">
+                <div class="flex gap-x-14 px-16 py-10 bg-yellow-500 items-center rounded-2xl">
+                    <div class="space-y-3">
+                        <h1 class="text-4xl font-bold">15% OFF</h1>
+                        <h3 class="text-2xl">on your next purchase</h3>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div class="w-0 h-full border border-y-2 border-dashed">
+
+                    </div>
+                    <div class="space-y-3">
+                        <h1 class="text-3xl font-semibold">NEW<sub>15</sub></h1>
+                        <p class="text-xl">Coupon Code</p>
+                    </div>
+                </div>
+                <div class="flex gap-x-14 px-16 py-10 bg-lime-400 items-center rounded-2xl">
+                    <div class="space-y-3">
+                        <h1 class="text-4xl font-bold">20% OFF</h1>
+                        <h3 class="text-2xl">on your next purchase</h3>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div class="w-0 h-full border border-y-2 border-dashed">
+
+                    </div>
+                    <div class="space-y-3">
+                        <h1 class="text-3xl font-semibold">Couple 20</h1>
+                        <p class="text-xl">Coupon Code</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex justify-center my-10">
+                <button
+                    class=" py-3 px-6 text-3xl border border-2 rounded-xl border-lime-500 bg-none hover:bg-none border-2">See
+                    All Offer</button>
+            </div>
+        </section>
+
+        <section class=" bg-gray-100">
+            <h1 class="text-center text-5xl font-semibold">P.H Paribahan</h1>
+            <p class="text-xl text-center mt-4 w-2/5 mx-auto">Yes, you can run unit tests and view the results directly
+                within the app. The integrated testing features allow for a streamlined .</p>
+            <div class="card bg-base-100 shadow-2xl container mx-auto">
+
+                <div class="flex items-center  p-10">
+                    <div class="w-3/5 space-y-6">
+                        <div class="flex justify-between">
+                            <div class="flex gap-x-4">
+                                <img src="images/bus-logo.png" alt="">
+                                <div class="space-y-2">
+                                    <h1 class="text-3xl font-semibold">
+                                        Greenline Paribahan
+                                    </h1>
+                                    <p class="2xl">Coach-009-WEB ! AC_Business</p>
+                                </div>
+                            </div>
+                            <div>
+                                <button
+                                    class="flex text-[#1DD100] rounded-xl border border-[#1DD100] px-5 py-2 bg-gray-100 gap-x-2 text-2xl  items-end">
+                                    <img src="images/seat-green-filled.png" alt="">
+                                    <span id="totalSeat">40</span> Seats left
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Dhaka - Sylhet -->
+                        <div class="bg-gray-300 p-4 rounded-xl space-y-10">
+                            <div class="flex justify-between">
+                                <h2 class="text-2xl text-gray-500">Route</h2>
+                                <h1 class="text-2xl font-semibold ">Dhaka - Sylhet</h1>
+                            </div>
+                            <div class="flex justify-between">
+                                <h1 class="text-2xl text-gray-500">Departure Time</h1>
+                                <h1 class="text-2xl font-semibold ">9:00 PM</h1>
+                            </div>
+                            <div class="flex justify-between">
+                                <button class="btn">
+                                    Boarding Point - Laxmipur
+                                </button>
+                                <button class="btn">
+                                    Dropping Point - Bogura
+                                </button>
+                                <button class="btn">
+                                    Est. Time - 11 Hour
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-auto text-center space-y-3">
+                        <img class="mx-auto" src="images/fare.png" alt="">
+                        <h1 class="text-3xl font-bold">550 Taka
+                        </h1>
+                        <h3 class="text-2xl font-semibold text-gray-500"> Per Seat</h3>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <!-- pasenger site -->
+            <div class="card bg-base-100 shadow-2xl container mx-auto mt-10 p-10">
+
+                <div class="flex">
+                    <div class="w-4/6 space-y-5">
+                        <h1 class="text-3xl font-semibold">Select Your Seat</h1>
+                        <div class="border border-gray-300 border-dashed
+                   "></div>
+                        <div class="flex justify-between">
+                            <h2 class="flex text-2xl font-semibold">
+                                <img src="images/seat-gray.png" alt="">
+                                Available
+                            </h2>
+                            <h2 class="flex text-2xl font-semibold">
+                                <img src="images/seat-green.png" alt="">
+                                Selected
+                            </h2>
+                        </div>
+                        <div class="border border-gray-300 border-dashed
+                    "></div>
+                        <div class="flex justify-end">
+                            <button class="bg-gray-300 py-3 px-10 rounded-2xl "><img class="w-10"
+                                    src="images/steering-wheel.png" alt=""></button>
+                        </div>
+
+
+
+                        <!-- seate All -->
+                        <div class="space-y-5">
+                            <div class="flex gap-x-6 ">
+                                <h1 class="text-4xl font-bold">A</h1>
+                                <div class="grid grid-cols-5 gap-x-3 w-full">
+                                    <button class="btn bg-gray-300 text-2xl text-gray-600">A1</button>
+                                    <button class="btn bg-gray-300 text-2xl text-gray-600 ">A2</button>
+                                    <div></div>
+                                    <button class="btn bg-gray-300 text-2xl text-gray-600">A3</button>
+                                    <button class="btn bg-gray-300 text-2xl text-gray-600">A4</button>
+                                </div>
+                            </div>
+                            <div class="flex gap-x-6">
+                                <h1 class="text-4xl font-bold">B</h1>
+                                <div class="grid grid-cols-5 gap-x-3 w-full">
+                                    <button class="btn bg-gray-300 text-2xl text-gray-600">B1</button>
+                                    <button class="btn bg-gray-300 text-2xl text-gray-600 ">B2</button>
+                                    <div></div>
+                                    <button class="btn bg-gray-300 text-2xl text-gray-600">B3</button>
+                                    <button class="btn bg-gray-300 text-2xl text-gray-600">B4</button>
+                                </div>
+                            </div>
+                            <div class="flex gap-x-6">
+                                <h1 class="text-4xl font-bold">C</h1>
+                                <div class="grid grid-cols-5 gap-x-3 w-full">
+                                    <button class="btn bg-gray-300 text-2xl text-gray-600">C1</button>
+                                    <button class="btn bg-gray-300 text-2xl text-gray-600 ">C2</button>
+                                    <div></div>
+                                    <button class="btn bg-gray-300 text-2xl text-gray-600">C3</button>
+                                    <button class="btn bg-gray-300 text-2xl text-gray-600">C4</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div>
+                        <h1 class="text-">Select Your Seat</h1>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
