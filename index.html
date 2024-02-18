@@ -39,7 +39,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="">
         <!-- Best offers for you section -->
         <section class="mx-auto container
         ">
@@ -302,16 +302,16 @@
                             <hr>
                             <div class="flex justify-between">
                                 <h1 class="text-2xl font-semibold">Total Price</h1>
-                                <h1 class="text-2xl font-semibold">BDT <span>1000</span></h1>
+                                <h1 class="text-2xl font-semibold">BDT <span id="totalPrice">0.00</span></h1>
                             </div>
                             <div class="flex">
-                                <input type="text" placeholder="Type here"
-                                    class=" rounded-2xl outline-none text-xl border-2 py-3 px-5 w-full" />
-                                <button class="btn btn-primary -ml-20 mt-1">Apply</button>
+                                <input disabled type="text" placeholder="Have any copupon?"
+                                   id="copuponInput" class=" rounded-2xl outline-none text-xl border-2 py-3 px-5 w-full" />
+                                <button disabled class="btn btn-primary -ml-20 mt-1">Apply</button>
                             </div>
                             <div class="flex justify-between">
                                 <h1 class="text-2xl font-semibold">Grand total</h1>
-                                <h1 class="text-2xl font-semibold">BDT <span>1000</span></h1>
+                                <h1 class="text-2xl font-semibold">BDT <span id="grandTotal">1000</span></h1>
                             </div>
                             <form class="w-full space-y-2">
                                 <div class="form-control">
@@ -319,13 +319,13 @@
                                         <span class="label-text  text-xl">Passenger Name*</span>
                                     </label>
                                     <input type="text" placeholder="Enter your name" class="input input-bordered"
-                                        required />
+                                         />
                                 </div>
                                 <div class="form-control">
                                     <label class="label mb-2">
                                         <span class="label-text text-xl">Phone Number*</span>
                                     </label>
-                                    <input type="email" placeholder="Enter your phone number"
+                                    <input type="number" id="phoneNumber" placeholder="Enter your phone number"
                                         class="input input-bordered" required />
                                 </div>
                                 <div class="form-control">
@@ -333,13 +333,13 @@
                                         <span class="label-text text-xl">Email ID</span>
                                     </label>
                                     <input type="password" placeholder="Enter your email id"
-                                        class="input input-bordered" required />
+                                        class="input input-bordered"  />
                                     <label class="label">
                                         <a href="#" class="label-text-alt link link-hover text-xl">Forgot password?</a>
                                     </label>
                                 </div>
                                 <div class="form-control mt-6">
-                                    <button class="btn btn-primary text-xl">Login</button>
+                                    <button disabled id="nextBtn" class="btn btn-primary text-xl">Next</button>
                                 </div>
                                 <div class="flex justify-around">
                                     <h1 class="text-xl underline text-gray-500 font-semibold">Terms and Conditions</h1>
