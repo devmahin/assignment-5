@@ -34,7 +34,7 @@
     <header class="container mx-auto mt-5 ">
         <nav class="flex justify-between">
             <h1 class="text-3xl font-bold">P-Ticket</h1>
-            <ul class="flex text-xl text-gray-500  items-center gap-x-5 cursor-pointer">
+            <ul class="flex text-xl text-gray-500  items-center gap-x-5 cursor-pointer hidden lg:flex">
                 <li><a href="">Home</a></li>
                 <li>About</li>
                 <li>Destination</li>
@@ -48,10 +48,10 @@
         </nav>
 
         <div class="banner relative my-10 w-full">
-            <img class="w-full " src="images/banner.png" alt="">
+            <img class="w-full" src="images/banner.png" alt="">
             <div class="absolute left-2/4 top-2/4 text-center -translate-x-2/4 space-y-3 -translate-y-2/4">
-                <h1 class="text-5xl font-semibold text-white">End-to-End Travel with</h1>
-                <h1 class="text-5xl font-semibold text-[#1DD100]"> P Paribahan</h1>
+                <h1 class="text-4xl lg:text-5xl font-semibold text-white text-nowrap">End-to-End Travel with</h1>
+                <h1 class="text-4xl lg:text-5xl font-semibold text-[#1DD100]"> P Paribahan</h1>
                 <p class="text-white">Yes, you can run unit tests and view the results directly within the app. The
                     integrated testing features allow for a streamlined .</p>
                 <a href="#buyNow" class="btn bg-[#1DD100]" >
@@ -66,7 +66,7 @@
         <section class="mx-auto container
         ">
             <h1 class="text-center text-5xl font-semibold">Best offers for you</h1>
-            <div class="flex justify-evenly gap-x-10 mt-10">
+            <div class="lg:flex justify-evenly gap-x-10  mt-10">
                 <div class="flex gap-x-10 px-16  bg-yellow-500 items-center rounded-2xl">
                     <div class="space-y-3 w-5/12">
                         <h1 class="text-4xl font-bold">15% OFF</h1>
@@ -81,7 +81,7 @@
                         <p class="text-xl">Coupon Code</p>
                     </div>
                 </div>
-                <div class="flex gap-x-10 px-16  bg-lime-400 items-center rounded-2xl">
+                <div class="flex gap-x-10 px-16  bg-lime-400 items-center rounded-2xl mt-10 lg:mt-0">
                     <div class="space-y-3 w-5/12">
                         <h1 class="text-4xl font-bold">20% OFF</h1>
                         <h3 class="text-2xl">on your next purchase</h3>
@@ -95,7 +95,6 @@
                         <p class="text-xl">Coupon Code</p>
                     </div>
                 </div>
-
             </div>
             <div class="flex justify-center my-10">
                 <button 
@@ -106,13 +105,12 @@
         <!-- P.H Paribahan counter -->
         <section class=" bg-[#F7F8F8] py-20 rounded-3xl border-y-2 border-emerald-500">
             <h1 class="text-center text-5xl font-semibold">P.H Paribahan</h1>
-            <p class="text-xl text-center mt-4 w-2/5 mx-auto">Yes, you can run unit tests and view the results directly
+            <p class="text-xl text-center mt-4 w-4/5 mb-10 lg:mb-0 lg:w-2/5 mx-auto">Yes, you can run unit tests and view the results directly
                 within the app. The integrated testing features allow for a streamlined .</p>
-            <div class="card bg-base-100 shadow-2xl container mx-auto">
-
-                <div class="flex items-center  px-10">
-                    <div class="w-3/5 space-y-6">
-                        <div class="flex justify-between">
+            <div class="card bg-base-100 shadow-2xl py-7 lg:py-0 container mx-auto">
+                <div class="lg:flex items-center px-10">
+                    <div class="lg:w-3/5 space-y-6">
+                        <div class="lg:flex justify-between">
                             <div class="flex gap-x-4">
                                 <img src="images/bus-logo.png" alt="">
                                 <div class="space-y-2">
@@ -122,7 +120,7 @@
                                     <p class="2xl">Coach-009-WEB ! AC_Business</p>
                                 </div>
                             </div>
-                            <div>
+                            <div class="flex justify-center mt-5 lg:mt-0 lg:flex-none">
                                 <button
                                     class="flex text-[#1DD100] rounded-xl border border-[#1DD100] px-5 py-2 bg-gray-100 gap-x-2 text-2xl  items-end">
                                     <img src="images/seat-green-filled.png" alt="">
@@ -140,8 +138,8 @@
                                 <h1 class="text-2xl text-gray-500">Departure Time</h1>
                                 <h1 class="text-2xl font-semibold ">9:00 PM</h1>
                             </div>
-                            <div class="flex justify-between">
-                                <button class="btn">
+                            <div class=" lg:flex justify-between">
+                                <button class="btn ">
                                     Boarding Point - Laxmipur
                                 </button>
                                 <button class="btn">
@@ -153,7 +151,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="ml-10">
+                    <div class="ml-10 hidden lg:flex">
                         <img src="images/info-devider.png" alt="">
                     </div>
                     <div class="mx-auto text-center space-y-3">
@@ -166,13 +164,10 @@
 
             </div>
 
-
-
-
             <!-- pasenger site -->
             <div class="card bg-base-100 shadow-2xl container mx-auto mt-10 p-10">
 
-                <div id="buyNow" class="grid grid-cols-2 gap-x-10">
+                <div id="buyNow" class="grid grid-cols-1 lg:grid-cols-2 gap-x-10">
                     <div class="col-span-1 space-y-5 ">
                         <h1 class="text-3xl font-semibold">Select Your Seat</h1>
                         <div class="border border-gray-300 border-dashed"></div>
@@ -301,13 +296,13 @@
                     </div>
 
 
+                    <!-- <div class="w-0 h-full border border-y-2 border-dashed"> -->
 
 
                     <!-- form site -->
-                    <div class="space-y-5 ">
-                        <h1 class="text-3xl font-semibold">Select Your Seat</h1>
-                        <div class="border border-gray-300 border-dashed"></div>
-                        <div class="card space-y-5">
+                    <div class="space-y-5 lg:border-l-2 border-dashed">
+                            <h1 class=" lg:ms-5 text-3xl font-semibold pb-5">Select Your Seat</h1>
+                        <div class="card space-y-5 lg:ms-5">
                             
                             <div class="bg-gray-200 shadow-2xl px-5 py-8 rounded-xl space-y-5">
                                 <div class="flex justify-between">
