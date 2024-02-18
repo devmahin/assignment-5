@@ -82,6 +82,9 @@
             </div>
         </section>
 
+
+
+        <!-- P.H Paribahan counter -->
         <section class=" bg-gray-100">
             <h1 class="text-center text-5xl font-semibold">P.H Paribahan</h1>
             <p class="text-xl text-center mt-4 w-2/5 mx-auto">Yes, you can run unit tests and view the results directly
@@ -133,7 +136,7 @@
                     </div>
                     <div class="mx-auto text-center space-y-3">
                         <img class="mx-auto" src="images/fare.png" alt="">
-                        <h1 class="text-3xl font-bold">550 Taka
+                        <h1 class="text-3xl font-bold"><span id="tiketPrice">550</span> Taka
                         </h1>
                         <h3 class="text-2xl font-semibold text-gray-500"> Per Seat</h3>
                     </div>
@@ -147,11 +150,10 @@
             <!-- pasenger site -->
             <div class="card bg-base-100 shadow-2xl container mx-auto mt-10 p-10">
 
-                <div class="flex">
-                    <div class="w-4/6 space-y-5">
+                <div class="grid grid-cols-2 gap-x-10">
+                    <div class="col-span-1 space-y-5 ">
                         <h1 class="text-3xl font-semibold">Select Your Seat</h1>
-                        <div class="border border-gray-300 border-dashed
-                   "></div>
+                        <div class="border border-gray-300 border-dashed"></div>
                         <div class="flex justify-between">
                             <h2 class="flex text-2xl font-semibold">
                                 <img src="images/seat-gray.png" alt="">
@@ -174,34 +176,104 @@
                         <!-- seate All -->
                         <div class="space-y-5">
                             <div class="flex gap-x-6 ">
-                                <h1 class="text-4xl font-bold">A</h1>
+                                <h1 class="text-4xl w-10 font-bold">A</h1>
                                 <div class="grid grid-cols-5 gap-x-3 w-full">
-                                    <button class="btn bg-gray-300 text-2xl text-gray-600">A1</button>
-                                    <button class="btn bg-gray-300 text-2xl text-gray-600 ">A2</button>
+                                    <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">A1</button>
+                                    <button class="btn bg-gray-300 text-2xl site-btn text-gray-600 ">A2</button>
                                     <div></div>
-                                    <button class="btn bg-gray-300 text-2xl text-gray-600">A3</button>
-                                    <button class="btn bg-gray-300 text-2xl text-gray-600">A4</button>
+                                    <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">A3</button>
+                                    <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">A4</button>
                                 </div>
                             </div>
                             <div class="flex gap-x-6">
-                                <h1 class="text-4xl font-bold">B</h1>
+                                <h1 class="text-4xl w-10 font-bold">B</h1>
                                 <div class="grid grid-cols-5 gap-x-3 w-full">
-                                    <button class="btn bg-gray-300 text-2xl text-gray-600">B1</button>
-                                    <button class="btn bg-gray-300 text-2xl text-gray-600 ">B2</button>
+                                    <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">B1</button>
+                                    <button class="btn bg-gray-300 text-2xl site-btn text-gray-600 ">B2</button>
                                     <div></div>
-                                    <button class="btn bg-gray-300 text-2xl text-gray-600">B3</button>
-                                    <button class="btn bg-gray-300 text-2xl text-gray-600">B4</button>
+                                    <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">B3</button>
+                                    <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">B4</button>
                                 </div>
                             </div>
                             <div class="flex gap-x-6">
-                                <h1 class="text-4xl font-bold">C</h1>
+                                <h1 class="text-4xl w-10 font-bold">C</h1>
                                 <div class="grid grid-cols-5 gap-x-3 w-full">
-                                    <button class="btn bg-gray-300 text-2xl text-gray-600">C1</button>
-                                    <button class="btn bg-gray-300 text-2xl text-gray-600 ">C2</button>
+                                    <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">C1</button>
+                                    <button class="btn bg-gray-300 text-2xl site-btn text-gray-600 ">C2</button>
                                     <div></div>
-                                    <button class="btn bg-gray-300 text-2xl text-gray-600">C3</button>
-                                    <button class="btn bg-gray-300 text-2xl text-gray-600">C4</button>
+                                    <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">C3</button>
+                                    <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">C4</button>
                                 </div>
+                            </div>
+                            <div class="flex gap-x-6">
+                                <h1 class="text-4xl w-10 font-bold">D</h1>
+                                <div class="grid grid-cols-5 gap-x-3 w-full">
+                                    <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">D1</button>
+                                    <button class="btn bg-gray-300 text-2xl site-btn text-gray-600 ">D2</button>
+                                    <div></div>
+                                    <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">D3</button>
+                                    <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">D4</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-x-6">
+                            <h1 class="text-4xl w-10 font-bold">E</h1>
+                            <div class="grid grid-cols-5 gap-x-3 w-full">
+                                <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">E1</button>
+                                <button class="btn bg-gray-300 text-2xl site-btn text-gray-600 ">E2</button>
+                                <div></div>
+                                <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">E3</button>
+                                <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">E4</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-x-6">
+                            <h1 class="text-4xl w-10 font-bold">F</h1>
+                            <div class="grid grid-cols-5 gap-x-3 w-full">
+                                <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">F1</button>
+                                <button class="btn bg-gray-300 text-2xl site-btn text-gray-600 ">F2</button>
+                                <div></div>
+                                <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">F3</button>
+                                <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">F4</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-x-6">
+                            <h1 class="text-4xl w-10 font-bold">G</h1>
+                            <div class="grid grid-cols-5 gap-x-3 w-full">
+                                <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">G1</button>
+                                <button class="btn bg-gray-300 text-2xl site-btn text-gray-600 ">G2</button>
+                                <div></div>
+                                <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">G3</button>
+                                <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">G4</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-x-6">
+                            <h1 class="text-4xl w-10 font-bold">H</h1>
+                            <div class="grid grid-cols-5 gap-x-3 w-full">
+                                <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">H1</button>
+                                <button class="btn bg-gray-300 text-2xl site-btn text-gray-600 ">H2</button>
+                                <div></div>
+                                <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">H3</button>
+                                <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">H4</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-x-6">
+                            <h1 class="text-4xl w-10 font-bold">I</h1>
+                            <div class="grid grid-cols-5 gap-x-3 w-full">
+                                <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">I1</button>
+                                <button class="btn bg-gray-300 text-2xl site-btn text-gray-600 ">I2</button>
+                                <div></div>
+                                <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">I3</button>
+                                <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">I4</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-x-6">
+                            <h1 class="text-4xl w-10 font-bold">J</h1>
+                            <div class="grid grid-cols-5 gap-x-3 w-full">
+                                <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">J1</button>
+                                <button class="btn bg-gray-300 text-2xl site-btn text-gray-600 ">J2</button>
+                                <div></div>
+                                <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">J3</button>
+                                <button class="btn bg-gray-300 text-2xl site-btn text-gray-600">J4</button>
                             </div>
                         </div>
                     </div>
@@ -209,9 +281,74 @@
 
 
 
+                    <!-- form site -->
+                    <div class="space-y-5 ">
+                        <h1 class="text-3xl font-semibold">Select Your Seat</h1>
+                        <div class="border border-gray-300 border-dashed"></div>
+                        <div class="card space-y-5">
+                            <div class="flex justify-between">
+                                <h1 class="text-2xl font-semibold">Class</h1>
+                                <h1 class="text-2xl font-semibold">Seat<span id="site-buy" class="bg-red-600 px-3 ml-2 text-white rounded-3xl">0</span></h1>
+                                <h1 class="text-2xl">Price</h1>
+                            </div>
+                            <div class="border border-gray-300 border-dashed"></div>
+                           <div id="buySeatName" class="space-y-4">
+                            <!-- <ul class="flex justify-between font-semibold">
+                                <li class="text-xl">C2</li>
+                                <li class="text-xl">Economoy</li>
+                                <li class="text-xl">550</li>
+                            </ul> -->
+                           </div>
+                            <hr>
+                            <div class="flex justify-between">
+                                <h1 class="text-2xl font-semibold">Total Price</h1>
+                                <h1 class="text-2xl font-semibold">BDT <span>1000</span></h1>
+                            </div>
+                            <div class="flex">
+                                <input type="text" placeholder="Type here"
+                                    class=" rounded-2xl outline-none text-xl border-2 py-3 px-5 w-full" />
+                                <button class="btn btn-primary -ml-20 mt-1">Apply</button>
+                            </div>
+                            <div class="flex justify-between">
+                                <h1 class="text-2xl font-semibold">Grand total</h1>
+                                <h1 class="text-2xl font-semibold">BDT <span>1000</span></h1>
+                            </div>
+                            <form class="w-full space-y-2">
+                                <div class="form-control">
+                                    <label class="label mb-2">
+                                        <span class="label-text  text-xl">Passenger Name*</span>
+                                    </label>
+                                    <input type="text" placeholder="Enter your name" class="input input-bordered"
+                                        required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label mb-2">
+                                        <span class="label-text text-xl">Phone Number*</span>
+                                    </label>
+                                    <input type="email" placeholder="Enter your phone number"
+                                        class="input input-bordered" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label mb-2">
+                                        <span class="label-text text-xl">Email ID</span>
+                                    </label>
+                                    <input type="password" placeholder="Enter your email id"
+                                        class="input input-bordered" required />
+                                    <label class="label">
+                                        <a href="#" class="label-text-alt link link-hover text-xl">Forgot password?</a>
+                                    </label>
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button class="btn btn-primary text-xl">Login</button>
+                                </div>
+                                <div class="flex justify-around">
+                                    <h1 class="text-xl underline text-gray-500 font-semibold">Terms and Conditions</h1>
+                                    <h1 class="text-xl underline text-gray-500 font-semibold">Cancellation Policy</h1>
+                                </div>
 
-                    <div>
-                        <h1 class="text-">Select Your Seat</h1>
+                            </form>
+                        </div>
+
 
                     </div>
                 </div>
@@ -223,6 +360,8 @@
     <footer>
 
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
