@@ -10,7 +10,6 @@
 </head>
 
 <!-- modal start -->
-<!-- Put this part before </body> tag -->
 <input type="checkbox" id="my_modal_6" class="modal-toggle" />
 <div class="modal" role="dialog">
     <div class="modal-box ">
@@ -41,7 +40,7 @@
                 <li>Destination</li>
                 <li>Search</li>
             </ul>
-            <button
+            <button 
                 class="flex text-[#1DD100] rounded-xl border border-[#1DD100] px-5 py-2 bg-gray-100 gap-x-2 text-2xl  items-end">
                 Bus
                 <img class="w-7" src="images/bus-icon.png" alt="">
@@ -55,9 +54,10 @@
                 <h1 class="text-5xl font-semibold text-[#1DD100]"> P Paribahan</h1>
                 <p class="text-white">Yes, you can run unit tests and view the results directly within the app. The
                     integrated testing features allow for a streamlined .</p>
-                <button class="btn bg-[#1DD100]">
+                <button class="btn bg-[#1DD100]" >
                     Buy Tickets
                 </button>
+                <!-- <input type="text" > -->
             </div>
         </div>
     </header>
@@ -98,7 +98,7 @@
 
             </div>
             <div class="flex justify-center my-10">
-                <button
+                <button 
                     class=" py-3 px-6 text-3xl border border-2 rounded-xl border-lime-500 bg-none hover:bg-none border-2">See
                     All Offer</button>
             </div>
@@ -196,7 +196,7 @@
 
 
                         <!-- seate All -->
-                        <div class="space-y-5">
+                        <div id="buyNow" class="space-y-5">
                             <div class="flex gap-x-6 ">
                                 <h1 class="text-4xl w-10 font-bold">A</h1>
                                 <div class="grid grid-cols-5 gap-x-3 w-full">
@@ -330,11 +330,11 @@
                             <div class="flex">
                                 <input disabled type="text" placeholder="Have any copupon?" id="copuponInput"
                                     class=" rounded-2xl outline-none text-xl border-2 py-3 px-5 w-full" />
-                                <button disabled class="btn btn-primary -ml-20 mt-1">Apply</button>
+                                <button disabled class="btn btn-primary -ml-20 mt-1" id="apply">Apply</button>
                             </div>
                             <div class="flex justify-between">
                                 <h1 class="text-2xl font-semibold">Grand total</h1>
-                                <h1 class="text-2xl font-semibold">BDT <span id="grandTotal">1000</span></h1>
+                                <h1 class="text-2xl font-semibold">BDT <span id="grandTotal">0.00</span></h1>
                             </div>
                             <form class="w-full space-y-2">
                                 <div class="form-control">

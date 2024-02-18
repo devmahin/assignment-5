@@ -1,5 +1,7 @@
 
 const allSite = document.querySelectorAll(".site-btn")
+const copuponInput = document.getElementById("copuponInput")
+const apply = document.getElementById("apply")
 // #1DD100
 allSite.forEach((vlaue) => {
     // console.log(vlaue)
@@ -7,11 +9,10 @@ allSite.forEach((vlaue) => {
         // vlaue.classList.add("text-white" , "bg-[#1DD100]")
         vlaue.style.backgroundColor = "#1DD100";
         vlaue.style.color = "white";
-        vlaue.setAttribute("disabled", true)
-
+        vlaue.setAttribute("disabled", true);
 
         // ticketingInterface function
-        ticketingInterface()
+        ticketingInterface(vlaue)
 
         // buySeatNameFun
         buySeatNameFun(vlaue)
@@ -20,12 +21,12 @@ allSite.forEach((vlaue) => {
         totalPriceFun()
 
         // nextBtnFun
-nextBtnFun()
+        nextBtnFun()
 
     })
 })
 
-function ticketingInterface() {
+function ticketingInterface(sit) {
 
     // totalSeat
     const totalSeat = htmlStatickCount("totalSeat");
@@ -37,21 +38,27 @@ function ticketingInterface() {
     const siteBuyAddition = siteBuy + 1;
     // console.log(siteBuyAddition);
     innetTexrFun("site-buy", siteBuyAddition);
+
+    if (siteBuyAddition >= 4) {
+        for (let sit of allSite) {
+            sit.setAttribute("disabled", true);
+        }
+        copuponInputFun()
+    }
+
 }
 
 
 
 // nextBtn 
-function nextBtnFun(){
+function nextBtnFun() {
     const numberInput = document.getElementById("phoneNumber");
-    numberInput.addEventListener("input", function(e){
+    numberInput.addEventListener("input", function (e) {
         let inputNumber = e.target.value;
-        if(inputNumber > 0){
+        if (inputNumber > 0) {
             const nextBtn = document.getElementById("nextBtn");
             nextBtn.removeAttribute("disabled")
-            // addEventListener nextBtn
-            nextBtn.addEventListener("click", modalPage)
-        }else{
+        } else {
             nextBtn.setAttribute("disabled", true)
         }
     })
@@ -59,15 +66,39 @@ function nextBtnFun(){
 
 
 
-function modalPage(){
-    
-}
-
-
 
 
 
 // copuponInput
+function copuponInputFun() {
+    copuponInput.removeAttribute("disabled")
+    apply.removeAttribute("disabled")
+    apply.addEventListener("click", function () {
+        let copuponInputValue = copuponInput.value.toLowerCase();
+        let inputValidCopoun = copuponInputValue.split(" ").join("");
+        if(inputValidCopoun === "couple20"){
+           discountCopoun(20)
+           copuponInput.value = "";
+           alert(`Discount 20%`)
+           apply.setAttribute("disabled", true)
+        }else if(inputValidCopoun === "new15"){
+            discountCopoun(15)
+            copuponInput.value = "";
+            alert(`Discount 15%`)
+            apply.setAttribute("disabled", true)
+        }else{
+            copuponInput.value = "";
+            alert(`Coupone is not match`)
+        }
+
+    })
+}
+
+function discountCopoun(value){
+    let copounDiscount =  htmlStatickCount("grandTotal")
+    let discount = copounDiscount * value / 100;
+    innetTexrFun("grandTotal", (copounDiscount - discount))
+}
 
 
 
