@@ -9,6 +9,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
+<!-- modal start -->
+<!-- Put this part before </body> tag -->
+<input type="checkbox" id="my_modal_6" class="modal-toggle" />
+<div class="modal" role="dialog">
+    <div class="modal-box ">
+        <!-- <h3 class="font-bold text-lg">Hello!</h3>
+        <p class="py-4">This modal works with a hidden checkbox!</p>
+        -->
+    <div class="flex justify-center items-center flex-col space-y-2 text-center">
+        <img src="images/success.png" alt="">
+        <h1 class="text-3xl font-semibold">SUCCESS</h1>
+        <p class="font-semibold">Thank you for Booking Our Bus Seats. 
+            We are working hard to find the best service and deals for you.</p>
+        <p>Shortly you will find a confirmation in your email.</p>
+        <div class="">
+            <label for="my_modal_6" class="btn bg-[#1DD100] hover:bg-[#1DD100] px-14">Continue</label>
+        </div> 
+    </div>
+    </div>
+</div>
+<!-- modal end -->
+
 <body>
     <header class="container mx-auto mt-5 ">
         <nav class="flex justify-between">
@@ -288,25 +310,26 @@
                         <div class="card space-y-5">
                             <div class="flex justify-between">
                                 <h1 class="text-2xl font-semibold">Class</h1>
-                                <h1 class="text-2xl font-semibold">Seat<span id="site-buy" class="bg-red-600 px-3 ml-2 text-white rounded-3xl">0</span></h1>
+                                <h1 class="text-2xl font-semibold">Seat<span id="site-buy"
+                                        class="bg-red-600 px-3 ml-2 text-white rounded-3xl">0</span></h1>
                                 <h1 class="text-2xl">Price</h1>
                             </div>
                             <div class="border border-gray-300 border-dashed"></div>
-                           <div id="buySeatName" class="space-y-4">
-                            <!-- <ul class="flex justify-between font-semibold">
+                            <div id="buySeatName" class="space-y-4">
+                                <!-- <ul class="flex justify-between font-semibold">
                                 <li class="text-xl">C2</li>
                                 <li class="text-xl">Economoy</li>
                                 <li class="text-xl">550</li>
                             </ul> -->
-                           </div>
+                            </div>
                             <hr>
                             <div class="flex justify-between">
                                 <h1 class="text-2xl font-semibold">Total Price</h1>
                                 <h1 class="text-2xl font-semibold">BDT <span id="totalPrice">0.00</span></h1>
                             </div>
                             <div class="flex">
-                                <input disabled type="text" placeholder="Have any copupon?"
-                                   id="copuponInput" class=" rounded-2xl outline-none text-xl border-2 py-3 px-5 w-full" />
+                                <input disabled type="text" placeholder="Have any copupon?" id="copuponInput"
+                                    class=" rounded-2xl outline-none text-xl border-2 py-3 px-5 w-full" />
                                 <button disabled class="btn btn-primary -ml-20 mt-1">Apply</button>
                             </div>
                             <div class="flex justify-between">
@@ -318,8 +341,7 @@
                                     <label class="label mb-2">
                                         <span class="label-text  text-xl">Passenger Name*</span>
                                     </label>
-                                    <input type="text" placeholder="Enter your name" class="input input-bordered"
-                                         />
+                                    <input type="text" placeholder="Enter your name" class="input input-bordered" />
                                 </div>
                                 <div class="form-control">
                                     <label class="label mb-2">
@@ -333,14 +355,17 @@
                                         <span class="label-text text-xl">Email ID</span>
                                     </label>
                                     <input type="password" placeholder="Enter your email id"
-                                        class="input input-bordered"  />
+                                        class="input input-bordered" />
                                     <label class="label">
                                         <a href="#" class="label-text-alt link link-hover text-xl">Forgot password?</a>
                                     </label>
                                 </div>
                                 <div class="form-control mt-6">
-                                    <button disabled id="nextBtn" class="btn btn-primary text-xl">Next</button>
+                                    <label for="my_modal_6" disabled id="nextBtn"
+                                        class="btn btn-primary text-xl">Next</label>
                                 </div>
+
+
                                 <div class="flex justify-around">
                                     <h1 class="text-xl underline text-gray-500 font-semibold">Terms and Conditions</h1>
                                     <h1 class="text-xl underline text-gray-500 font-semibold">Cancellation Policy</h1>
