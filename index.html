@@ -34,8 +34,8 @@
     <header class="container mx-auto mt-5 ">
         <nav class="flex justify-between">
             <h1 class="text-3xl font-bold">P-Ticket</h1>
-            <ul class="flex text-1xl font-semibold items-center gap-x-5 cursor-pointer">
-                <li>Home</li>
+            <ul class="flex text-xl text-gray-500  items-center gap-x-5 cursor-pointer">
+                <li><a href="">Home</a></li>
                 <li>About</li>
                 <li>Destination</li>
                 <li>Search</li>
@@ -54,9 +54,9 @@
                 <h1 class="text-5xl font-semibold text-[#1DD100]"> P Paribahan</h1>
                 <p class="text-white">Yes, you can run unit tests and view the results directly within the app. The
                     integrated testing features allow for a streamlined .</p>
-                <button class="btn bg-[#1DD100]" >
+                <a href="#buyNow" class="btn bg-[#1DD100]" >
                     Buy Tickets
-                </button>
+                </a>
                 <!-- <input type="text" > -->
             </div>
         </div>
@@ -66,31 +66,31 @@
         <section class="mx-auto container
         ">
             <h1 class="text-center text-5xl font-semibold">Best offers for you</h1>
-            <div class="flex justify-evenly mt-10">
-                <div class="flex gap-x-14 px-16 py-10 bg-yellow-500 items-center rounded-2xl">
-                    <div class="space-y-3">
+            <div class="flex justify-evenly gap-x-10 mt-10">
+                <div class="flex gap-x-10 px-16  bg-yellow-500 items-center rounded-2xl">
+                    <div class="space-y-3 w-5/12">
                         <h1 class="text-4xl font-bold">15% OFF</h1>
                         <h3 class="text-2xl">on your next purchase</h3>
                         <p>use by January 2024</p>
                     </div>
-                    <div class="w-0 h-full border border-y-2 border-dashed">
-
+                    <div class="w-2/12">
+                        <img src="images/cupon-devider.png" alt="">
                     </div>
-                    <div class="space-y-3">
+                    <div class="space-y-3 w-5/12">
                         <h1 class="text-3xl font-semibold">NEW<sub>15</sub></h1>
                         <p class="text-xl">Coupon Code</p>
                     </div>
                 </div>
-                <div class="flex gap-x-14 px-16 py-10 bg-lime-400 items-center rounded-2xl">
-                    <div class="space-y-3">
+                <div class="flex gap-x-10 px-16  bg-lime-400 items-center rounded-2xl">
+                    <div class="space-y-3 w-5/12">
                         <h1 class="text-4xl font-bold">20% OFF</h1>
                         <h3 class="text-2xl">on your next purchase</h3>
                         <p>use by January 2024</p>
                     </div>
-                    <div class="w-0 h-full border border-y-2 border-dashed">
-
+                    <div class="w-2/12">
+                        <img src="images/cupon-devider.png" alt="">
                     </div>
-                    <div class="space-y-3">
+                    <div class="space-y-3 bg-red-500 w-5/12">
                         <h1 class="text-3xl font-semibold">Couple 20</h1>
                         <p class="text-xl">Coupon Code</p>
                     </div>
@@ -103,17 +103,14 @@
                     All Offer</button>
             </div>
         </section>
-
-
-
         <!-- P.H Paribahan counter -->
-        <section class=" bg-gray-100">
+        <section class=" bg-[#F7F8F8] py-20 rounded-3xl border-y-2 border-emerald-500">
             <h1 class="text-center text-5xl font-semibold">P.H Paribahan</h1>
             <p class="text-xl text-center mt-4 w-2/5 mx-auto">Yes, you can run unit tests and view the results directly
                 within the app. The integrated testing features allow for a streamlined .</p>
             <div class="card bg-base-100 shadow-2xl container mx-auto">
 
-                <div class="flex items-center  p-10">
+                <div class="flex items-center  px-10">
                     <div class="w-3/5 space-y-6">
                         <div class="flex justify-between">
                             <div class="flex gap-x-4">
@@ -156,6 +153,9 @@
                             </div>
                         </div>
                     </div>
+                    <div class="ml-10">
+                        <img src="images/info-devider.png" alt="">
+                    </div>
                     <div class="mx-auto text-center space-y-3">
                         <img class="mx-auto" src="images/fare.png" alt="">
                         <h1 class="text-3xl font-bold"><span id="tiketPrice">550</span> Taka
@@ -172,7 +172,7 @@
             <!-- pasenger site -->
             <div class="card bg-base-100 shadow-2xl container mx-auto mt-10 p-10">
 
-                <div class="grid grid-cols-2 gap-x-10">
+                <div id="buyNow" class="grid grid-cols-2 gap-x-10">
                     <div class="col-span-1 space-y-5 ">
                         <h1 class="text-3xl font-semibold">Select Your Seat</h1>
                         <div class="border border-gray-300 border-dashed"></div>
@@ -196,7 +196,7 @@
 
 
                         <!-- seate All -->
-                        <div id="buyNow" class="space-y-5">
+                        <div  class="space-y-5">
                             <div class="flex gap-x-6 ">
                                 <h1 class="text-4xl w-10 font-bold">A</h1>
                                 <div class="grid grid-cols-5 gap-x-3 w-full">
@@ -308,33 +308,37 @@
                         <h1 class="text-3xl font-semibold">Select Your Seat</h1>
                         <div class="border border-gray-300 border-dashed"></div>
                         <div class="card space-y-5">
-                            <div class="flex justify-between">
-                                <h1 class="text-2xl font-semibold">Class</h1>
-                                <h1 class="text-2xl font-semibold">Seat<span id="site-buy"
-                                        class="bg-red-600 px-3 ml-2 text-white rounded-3xl">0</span></h1>
-                                <h1 class="text-2xl">Price</h1>
-                            </div>
-                            <div class="border border-gray-300 border-dashed"></div>
-                            <div id="buySeatName" class="space-y-4">
-                                <!-- <ul class="flex justify-between font-semibold">
-                                <li class="text-xl">C2</li>
-                                <li class="text-xl">Economoy</li>
-                                <li class="text-xl">550</li>
-                            </ul> -->
-                            </div>
-                            <hr>
-                            <div class="flex justify-between">
-                                <h1 class="text-2xl font-semibold">Total Price</h1>
-                                <h1 class="text-2xl font-semibold">BDT <span id="totalPrice">0.00</span></h1>
-                            </div>
-                            <div class="flex">
-                                <input disabled type="text" placeholder="Have any copupon?" id="copuponInput"
-                                    class=" rounded-2xl outline-none text-xl border-2 py-3 px-5 w-full" />
-                                <button disabled class="btn btn-primary -ml-20 mt-1" id="apply">Apply</button>
-                            </div>
-                            <div class="flex justify-between">
-                                <h1 class="text-2xl font-semibold">Grand total</h1>
-                                <h1 class="text-2xl font-semibold">BDT <span id="grandTotal">0.00</span></h1>
+                            
+                            <div class="bg-gray-200 shadow-2xl px-5 py-8 rounded-xl space-y-5">
+                                <div class="flex justify-between">
+                                    <h1 class="text-2xl font-semibold">Class</h1>
+                                    <h1 class="text-2xl font-semibold">Seat<span id="site-buy"
+                                            class="bg-red-600 px-3 ml-2 text-white rounded-3xl">0</span></h1>
+                                    <h1 class="text-2xl">Price</h1>
+                                </div>
+                                <div class="border border-gray-300 border-dashed"></div>
+                            
+                                <div id="buySeatName" class="space-y-4">
+                                    <!-- <ul class="flex justify-between font-semibold">
+                                    <li class="text-xl">C2</li>
+                                    <li class="text-xl">Economoy</li>
+                                    <li class="text-xl">550</li>
+                                </ul> -->
+                                </div>
+                                <hr>
+                                <div class="flex justify-between">
+                                    <h1 class="text-2xl font-semibold">Total Price</h1>
+                                    <h1 class="text-2xl font-semibold">BDT <span id="totalPrice">0.00</span></h1>
+                                </div>
+                                <div class="flex">
+                                    <input disabled type="text" placeholder="Have any copupon?" id="copuponInput"
+                                        class=" rounded-2xl outline-none text-xl border-2 py-3 px-5 w-full" />
+                                    <button disabled class="btn btn-primary -ml-20 mt-1" id="apply">Apply</button>
+                                </div>
+                                <div class="flex justify-between">
+                                    <h1 class="text-2xl font-semibold">Grand total</h1>
+                                    <h1 class="text-2xl font-semibold">BDT <span id="grandTotal">0.00</span></h1>
+                                </div>
                             </div>
                             <form class="w-full space-y-2">
                                 <div class="form-control">

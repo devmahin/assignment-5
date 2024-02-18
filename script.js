@@ -43,6 +43,7 @@ function ticketingInterface(sit) {
         for (let sit of allSite) {
             sit.setAttribute("disabled", true);
         }
+        alert("A person can buy maximum 4 seats")
         copuponInputFun()
     }
 
@@ -93,7 +94,7 @@ function copuponInputFun() {
 
     })
 }
-
+// discountCopoun
 function discountCopoun(value){
     let copounDiscount =  htmlStatickCount("grandTotal")
     let discount = copounDiscount * value / 100;
