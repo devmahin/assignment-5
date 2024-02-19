@@ -43,8 +43,9 @@ function ticketingInterface(sit) {
         for (let sit of allSite) {
             sit.setAttribute("disabled", true);
         }
-        alert("A person can buy maximum 4 seats")
         copuponInputFun()
+        alert("A person can buy maximum 4 seats")
+
     }
 
 }
