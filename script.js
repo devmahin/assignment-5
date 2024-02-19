@@ -26,6 +26,9 @@ allSite.forEach((vlaue) => {
     })
 })
 
+function refreshFun(){
+    allSite = window.location.reload();
+}
 function ticketingInterface(sit) {
 
     // totalSeat
@@ -49,7 +52,6 @@ function ticketingInterface(sit) {
     }
 
 }
-
 
 
 // nextBtn 
